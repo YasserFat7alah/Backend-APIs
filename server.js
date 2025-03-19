@@ -2,6 +2,7 @@
 const express= require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const noteRouter = require('./Routes/noteRouter');
 
 // Create express app
 const app = express();
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
     res.send('Server Started!');
 });
 
+app.use('/api/v1', noteRouter);
 // Setup listener
 app.listen(port, () => {
     console.log("Server is starting ........");
