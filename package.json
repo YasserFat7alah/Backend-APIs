@@ -1,0 +1,25 @@
+{
+  "name": "yanotes",
+  "version": "1.0.0",
+  "description": "simple app to take notes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasserFat7alah/YaNotes.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YasserFat7alah/YaNotes/issues"
+  },
+  "homepage": "https://github.com/YasserFat7alah/YaNotes#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
