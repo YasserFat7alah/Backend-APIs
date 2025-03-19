@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const noteRouter = require('./Routes/noteRouter');
 
+
 // Create express app
 const app = express();
 const port = 3000;
@@ -27,6 +28,8 @@ app.use('/api/v1', noteRouter);
 app.listen(port, () => {
     console.log("Server is starting ........");
     console.log(`Server is listening on port ${port}`);
+    console.log('Press Ctrl+C to quit.');
+
 });
 
 
