@@ -7,7 +7,9 @@ exports.getAllNotes = (req, res) => {
   var values = memStorage.getValues(memStorage.store);
 
   if(values.length === 0) {
-    res.status(404).send({error: "No notes found!"});
+    res.status(404).send("ERROR: No notes found!");
+    console.log('================');
+    console.log('ERROR: No notes found!');
     return;
   }
 
@@ -133,7 +135,34 @@ exports.updateNote = (req, res) => {
 
 };
 
-// Delete a note // still in progress
+// Delete a note 
 exports.deleteNote = (req, res) => {
-  res.send("DELETE NOTE");
+
+  //variables intialization (required: id)
+  var id = req.params.id; // Get the id from the request
+      if(!id) { // Check if the id is empty
+
+        // Send the server response
+        res.status(400).send("ERROR: ID is required!");
+
+        // Log the error
+        console.log('================');
+        console.log('ERROR: ID is required!');
+        return;
+      }
+
+  if (!(memStorage.store.getItem(id))) {// Check if the note is not found
+    res.status(404).send("ERROR: Note not found!");
+    console.log('================');
+    console.log('ERROR: Note not found to delete!');
+    console.log(id);
+    return;
+  }
+
+  //deleting the note
+  memStorage.store.removeItem(id); // Delete the note from the memory storage 
+
+  //server response
+  res.status(200).send("SUCCESS: Note Deleted!");
+  console.log('Note Deleted: ', id);
 };
