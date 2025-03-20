@@ -58,7 +58,7 @@ exports.createNote = (req, res) => {
 exports.getNote = (req, res) => {
 
   //variables intialization (required: id)
-  var id = req.body.id; // Get the id from the request
+  var id = req.params.id; // Get the id from the request
       if(!id) { // Check if the id is empty
 
         // Send the server response
@@ -75,7 +75,7 @@ exports.getNote = (req, res) => {
         res.status(404).send("ERROR: Note not found!");
         console.log('================');
         console.log('ERROR: Note not found!');
-        console.log('id: ', id);
+        console.log(id);
         return;
       }
 
@@ -86,7 +86,7 @@ exports.getNote = (req, res) => {
 
 // Update a note
 exports.updateNote = (req, res) => {
-  
+
   //variables intialization (required: id)
   var id = req.body.id; // Get the id from the request
       if(!id) { // Check if the id is empty
