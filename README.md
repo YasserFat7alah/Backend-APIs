@@ -16,7 +16,14 @@
 
 
 
-This project was a great opportunity to practice **CRUD operations** and gain hands-on experience with **Express.js** and backend development. 🚀
+## 📌 What I Learned  
+While building this project, I learned:  
+- How to create **CRUD operations** using Express.js.  
+- How to **extract parameters** from the **URL (`req.params`)** and **query string (`req.query`)**.  
+- How to handle **data from request body (`req.body`)** when working with POST and PUT requests.  
+- How to test API endpoints using **Thunder Client**.  
+
+This project was a great opportunity to practice **Express.js routing, middleware, and backend development**. 🚀  
 
 <br><br>
 
