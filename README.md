@@ -27,6 +27,8 @@ This project was a great opportunity to practice **Express.js routing, middlewar
 
 <br><br>
 
+## 📌 Todo:
+- Setup database environment using PostgreSQL
 
 ##     
 **CRUD** stands for "Create, Read, Update, Delete", the four basic operations for managing data.
