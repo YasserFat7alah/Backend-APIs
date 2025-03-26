@@ -12,7 +12,8 @@
 
 ## 🛠 Tech Stack:  
 - **Express.js** – For handling server-side logic and API requests  
-- **Node.js** – As the runtime environment   
+- **Node.js** – As the runtime environment
+- **PostgreSQL** - For database access  
 
 
 
