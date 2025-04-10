@@ -33,5 +33,6 @@ CREATE TABLE bms.store (
 	store_code varchar(5) NOT NULL,
 	created_on timestamp NOT NULL,
 	created_by varchar(50) NOT NULL,
+	address varchar(200)  NOT NULL,
 	CONSTRAINT store_pkey PRIMARY KEY (store_id)
 );
