@@ -11,13 +11,13 @@ const db_config = {
 
 const pool = new Pool(db_config);
 
-pool.on('connect', client => {
+pool.on('connect', () => {
     console.log('database is connected')
 })
 
-pool.on('remove', client => {
+pool.on('remove', () => {
     console.log('database removed')
 
 })
 
-modules.exports = pool;
+module.exports = pool;
