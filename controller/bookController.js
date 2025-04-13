@@ -41,3 +41,17 @@ exports.saveBook = async (req, res) =>{
 };
 
 // view all books function
+exports.getBookList = async (req, res) => {
+    try {   
+        bookListQuery = queries.queryList.GET_BOOK_LIST_QUERY; 
+        var result = await dbConnection.dbQuery(bookListQuery);
+        console.log('Books: ', result.rows);
+        return res.status(200).send(JSON.stringify(result.rows));
+
+    } catch (err) { 
+        console.log("ERROR: ", err);
+        return res.status(500),send({error: "failed to find books"})
+
+        
+    }
+}

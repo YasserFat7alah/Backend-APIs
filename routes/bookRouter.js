@@ -7,7 +7,7 @@ const controller = require('../controller/bookController'); // Import bookContro
     router.post('/books', controller.saveBook); 
 
     // Get all books available **TODO
-    //router.get('/books', controller.getBookList); 
+    router.get('/books', controller.getBookList); 
 
     // Delete a book **todo
    
