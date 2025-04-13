@@ -1,13 +1,23 @@
-# YaNotes App 📝  
+# Back-end APIs 📝  
 
-**YaNotes** is a basic web application for creating, reading, updating, and deleting notes. It was built using **Node.js** and **Express.js** as part of my learning journey in **Express** and RESTful API development.  
+This repo includes different back-end APIs practising **CRUD** operations.  🚀
 <br>
 
-## ✨ Features:  
-- ✅ **Add Notes** with a title and content  
-- ✅ **View All Notes** stored in the database  
-- ✅ **Edit Notes** easily  
-- ✅ **Delete Notes** when no longer needed  
+## ✨ APIs
+ ## Notes API 
+  - ✅ **Add Notes** with a title and content  
+  - ✅ **View All Notes** stored in the database  
+  - ✅ **Edit Notes** easily  
+  - ✅ **Delete Notes** when no longer needed  
+ ### Books API 
+  - ✅ **Add books** with a title and description  
+  - ✅ **View All books** stored in the database  
+  - ✅ **view book description** easily  
+  - ✅ **Delete books** when no longer available  
+   ### Stores API 
+  - ✅ **Add Store** with a name and code  
+  - ✅ **View All Stores** stored in the database  
+  
 <br>
 
 ## 🛠 Tech Stack:  
@@ -24,6 +34,7 @@ While building this project, I learned:
 - How to handle **data from request body (`req.body`)** when working with POST and PUT requests.  
 - How to test API endpoints using **Thunder Client**. 
 - How to connect database using **PostgreSQL**. 
+- How to send and fetch data to database using queries.
 
 This project was a great opportunity to practice **Express.js routing, middleware, and backend development**. 🚀  
 
